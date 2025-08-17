@@ -5,6 +5,7 @@ body{
     margin: 0;
     overflow: auto;
     font-family: Roboto, sans-serif;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +20,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: #E5E7EB;
 }
 
 .header-logo,.icon{
@@ -30,37 +31,129 @@ a{
 
 .header-logo{
     gap: 16px;
-    font-size: large;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .icon {
-    color: royalblue;
+    color: red;
     font-size: 26px;
     font-weight: 700;
-    background: rgb(158, 158, 223);
+    background: white;
     width: 42px;
     height: 42px;
     border-radius: 50%;
 }
 
-.content{
+.container{
     flex-grow: 1;
 }
 
 .header,.footer{
     flex-shrink: 0;
     padding: 16px 48px;
-    background-color: rgb(4, 32, 16);
-    color: aliceblue;
-}
-
-.footer{
-    text-align: center;
+    background-color: #1F2937;
+    color: #f9faf8;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero{
+    padding: 72px 48px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    max-width: 700px;
+}
+
+.hero-header{
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero-secondary{
+    color: #E5E7EB;
+}
+
+.hero-button{
+    background-color: #3882f6;
+}
+
+.hero-button{
+    color: #f9faf8;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.hero-image{
+    max-width: 700px;
+    height: auto;
+}
+
+.info-header{
+    text-align: center;
+    margin: 48px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    margin: 80px;
+}
+
+.info {
+    max-width: 400px;
+    text-align: center;
+}
+
+.info img{
+    max-width: 300px;
+    height: auto;
+    margin: 40px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    gap: 72px;
+    padding: 80px;
+    color: #1F2937;
+}
+
+.quote-text{
+    text-align: left;
+    font-style: italic;
+    font-size: 36px;
+    max-width: 40%;
+}
+
+.quoted{
+    margin-left: 30%;
+    font-weight: bold;
+}
+
+.footer{
+    text-align: center;
 }
