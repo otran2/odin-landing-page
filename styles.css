@@ -163,6 +163,10 @@ button{
     align-items: center;
 }
 
+.cta-text{
+    max-width: 70%;
+}
+
 .cta-header{
     font-size: 24px;
     font-weight: bold;
